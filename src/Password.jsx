@@ -10,8 +10,14 @@ function getRandomChar() {
 }
 
 function generatePassword() {
-  // generate a password here
-  console.log("generating password")
+  const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  let password = ''
+  
+  for (let i = 0; i < 8; i++) {
+    password += chars[random(chars.length)]
+  }
+  
+  return password
 }
 
 function Password() {
