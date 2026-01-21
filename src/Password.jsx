@@ -24,8 +24,8 @@ function Password() {
   const dispatch = useDispatch()
 
   return (
-    <div>
-      <div>
+    <div className="password-form">
+      <div className="form-group">
         <label>Name:</label>
         <input 
           type="text"
@@ -34,7 +34,7 @@ function Password() {
           placeholder="e.g., Facebook, Gmail"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Password:</label>
         <input 
           type="text"
