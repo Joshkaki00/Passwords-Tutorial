@@ -1,5 +1,9 @@
 import { useState } from 'react'
 
+function random(n) {
+  return Math.floor(Math.random() * n)
+}
+
 function generatePassword() {
   // generate a password here
   console.log("generating password")
