@@ -4,11 +4,6 @@ function random(n) {
   return Math.floor(Math.random() * n)
 }
 
-function getRandomChar() {
-  const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-  return chars[random(chars.length)]
-}
-
 function generatePassword() {
   const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
   let password = ''
@@ -28,7 +23,7 @@ function Password() {
       <div>{password}</div>
       <div>
         <button onClick={(e) => {
-          generatePassword()
+          setPassword(generatePassword())
         }}>Generate</button>
       </div>
     </div>
