@@ -17,14 +17,27 @@ function generatePassword() {
 
 function Password() {
   const [password, setPassword] = useState('p@$$w0rd')
+  const [name, setName] = useState('')
 
   return (
     <div>
-      <input 
-        type="text"
-        onChange={(e) => setPassword(e.target.value)}
-        value={password}
-      />
+      <div>
+        <label>Name:</label>
+        <input 
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          placeholder="e.g., Facebook, Gmail"
+        />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input 
+          type="text"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
+      </div>
       <div>
         <button onClick={(e) => {
           setPassword(generatePassword())
