@@ -1,42 +1,122 @@
-#root {
-  max-width: 1280px;
+.App {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+h1 {
+  color: #333;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  color: #555;
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 10px;
+  margin-top: 40px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Password Form Styles */
+.password-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 15px;
 }
 
-.card {
-  padding: 2em;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
 }
 
-.read-the-docs {
-  color: #888;
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:first-of-type {
+  background: #4A90E2;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background: #357ABD;
+}
+
+button:last-of-type {
+  background: #5CB85C;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background: #4CAE4C;
+}
+
+/* Passwords List Styles */
+.passwords-list {
+  margin-top: 30px;
+}
+
+.passwords-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.passwords-list li {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-name {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.password-value {
+  font-family: 'Courier New', monospace;
+  color: #666;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 15px;
 }
