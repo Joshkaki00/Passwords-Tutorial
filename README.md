@@ -164,21 +164,6 @@ The algorithm considers:
 - Keyboard patterns
 - Repeated characters
 
-## 🔮 Future Enhancements
-
-Potential features to add:
-
-- [ ] **Delete passwords** - Remove saved passwords
-- [ ] **Edit passwords** - Modify existing entries
-- [ ] **Password length control** - Slider to set length (4-32 chars)
-- [ ] **Character set options** - Letters only, alphanumeric, or all
-- [ ] **Hyphenated format** - Option for `xxx-xxx-xxx` format
-- [ ] **Copy to clipboard** - One-click password copying
-- [ ] **Search/filter** - Find specific passwords
-- [ ] **Export/import** - Backup and restore passwords
-- [ ] **Dark mode** - Theme toggle
-- [ ] **Password history** - Track generated passwords
-
 ## 📚 Learning Resources
 
 This project demonstrates:
