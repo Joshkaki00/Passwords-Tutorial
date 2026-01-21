@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addPassword } from './features/passwords/passwordsSlice'
+import PasswordStrength from './PasswordStrength'
 
 function random(n) {
   return Math.floor(Math.random() * n)
@@ -41,6 +42,9 @@ function Password() {
           value={password}
         />
       </div>
+      
+      <PasswordStrength password={password} />
+      
       <div>
         <button onClick={(e) => {
           setPassword(generatePassword())
